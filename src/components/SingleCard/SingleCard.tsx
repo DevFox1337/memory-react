@@ -23,7 +23,7 @@ export default function SingleCard({ card, flipped, handleChoice, disabled}: Sin
         <img className="card__image card__front" src={card.src} alt="card front" />
         <img
           className="card__image card__back"
-          src="src/assets/images/card-back.png"
+          src="/images/card-back.png"
           onClick={handleClick}
           alt="card back" />
       </div>

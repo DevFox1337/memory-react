@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import SingleCard from './components/SingleCard/SingleCard';
-import devfox from './assets/images/devfox.png';
+import devfox from '/images/devfox.png';
 import './App.scss';
 
 // Define Card interface.
@@ -20,7 +20,7 @@ const allCards = [
   "tetra", "tingle",  "tott", "valoo", "zelda", "zephos", "zill", "zuko", "zunari"
 // Create a new array of objects, using the .map() method. Each object will have two properties: "src" and "matched".
 // The "src" property contains the path to the image and "matched" will be set to false by default.
-].map(name => ({ src: `src/assets/images/${name}.png`, matched: false }));
+].map(name => ({ src: `/images/${name}.png`, matched: false }));
 
 function App() {
   // Create state for current cards, number of turns, chosen cards and game (cards) state. (Import useState!)
