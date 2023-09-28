@@ -17,7 +17,7 @@
     line-height: 1.2;
     text-transform: uppercase;
 
-    @include medium-viewports {
+    @include small-viewports {
       font-size: pixels-to-rem(56);
     }
   }
@@ -48,7 +48,7 @@
       color: $clr-white;
     }
 
-    @include medium-viewports {
+    @include small-viewports {
       font-size: pixels-to-rem(22);
       width: 200px;
     }
@@ -60,7 +60,7 @@
     right: spacing(2);
     width: 50px;
 
-    @include medium-viewports {
+    @include small-viewports {
       bottom: spacing(3);
       right: spacing(3);
       width: 80px;
@@ -71,7 +71,7 @@
     color: $clr-white;
     font-size: pixels-to-rem(26);
 
-    @include medium-viewports {
+    @include small-viewports {
       font-size: pixels-to-rem(30);
     }
   }
