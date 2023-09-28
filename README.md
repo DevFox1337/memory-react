@@ -11,7 +11,7 @@ I also used:
 
 - Open up a terminal
 - `cd` into the folder where you want to save the repo
-- Run `git clone https://github.com/DevFox1337/tic-tac-toe-react.git` to copy the project to your machine
+- Run `git clone https://github.com/DevFox1337/memory-react.git` to copy the project to your machine
 - Run `npm install` to install dependencies
 - Run `npm run dev` to start the development server and have a look
 
