@@ -1,0 +1,33 @@
+$spacing-base: 1rem;
+$spacing-map: (
+    0: 0,
+    1: ($spacing-base * .25),
+    2: ($spacing-base * .5),
+    3: ($spacing-base * .75),
+    4: $spacing-base,
+    5: ($spacing-base * 1.25),
+    6: ($spacing-base * 1.5),
+    7: ($spacing-base * 1.75),
+    8: ($spacing-base * 2),
+    9: ($spacing-base * 2.25),
+    10: ($spacing-base * 2.5),
+    11: ($spacing-base * 2.75),
+    12: ($spacing-base * 3),
+    13: ($spacing-base * 3.25),
+    14: ($spacing-base * 3.5),
+    15: ($spacing-base * 3.75),
+    16: ($spacing-base * 4),
+    17: ($spacing-base * 4.25),
+    18: ($spacing-base * 4.50),
+    19: ($spacing-base * 4.75),
+    20: ($spacing-base * 5),
+);
+
+@function spacing($key) {
+    @if map-has-key($spacing-map, $key) {
+        @return map-get($spacing-map, $key);
+    }
+
+    @warn 'Unknown `#{$key}` in $spacing-map.';
+    @return null;
+}

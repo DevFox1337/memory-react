@@ -1,0 +1,78 @@
+.app {
+  @include flex-row-center;
+  height: 100vh;
+}
+
+.game {
+  @include flex-column-center;
+  gap: spacing(7);
+  padding: spacing(3);
+  text-align: center;
+  width: 750px;
+
+  &__title {
+    color: $clr-gold;
+    font-size: pixels-to-rem(40);
+    letter-spacing: spacing(1);
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    @include medium-viewports {
+      font-size: pixels-to-rem(56);
+    }
+  }
+
+  &__card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: spacing(4);
+  }
+
+  &__button {
+    background-color: $clr-white;
+    border: 2px solid $clr-black;
+    border-radius: spacing(6);
+    box-shadow: $defaultBoxShadow;
+    color: $clr-black;
+    cursor: pointer;
+    font-family: Hylia;
+    font-size: pixels-to-rem(18);
+    outline: none;
+    padding: spacing(2);
+    transition: all 0.2s;
+    width: 150px;
+
+    &:hover {
+      background-color: $clr-black;
+      border: 2px solid $clr-white;
+      color: $clr-white;
+    }
+
+    @include medium-viewports {
+      font-size: pixels-to-rem(22);
+      width: 200px;
+    }
+  }
+
+  &__devfox {
+    bottom: spacing(2);
+    position: fixed;
+    right: spacing(2);
+    width: 50px;
+
+    @include medium-viewports {
+      bottom: spacing(3);
+      right: spacing(3);
+      width: 80px;
+    }
+  }
+
+  &__turns {
+    color: $clr-white;
+    font-size: pixels-to-rem(26);
+
+    @include medium-viewports {
+      font-size: pixels-to-rem(30);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@mixin small-viewports() {
+  @media (min-width: $breakpointSmall) {
+    @content;
+  }
+}
+
+@mixin medium-viewports() {
+  @media (min-width: $breakpointMedium) {
+    @content;
+  }
+}
+
+@mixin large-viewports() {
+  @media (min-width: $breakpointLarge) {
+    @content;
+  }
+}
+
+@mixin extra-large-viewports() {
+  @media (min-width: $breakpointExtraLarge) {
+    @content;
+  }
+}
