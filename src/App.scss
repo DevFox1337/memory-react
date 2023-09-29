@@ -25,6 +25,7 @@
   &__card-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    // grid-template-columns: 100px 100px 100px;
     grid-gap: spacing(4);
   }
 
@@ -38,9 +39,14 @@
     font-family: Hylia;
     font-size: pixels-to-rem(18);
     outline: none;
-    padding: spacing(2);
-    transition: all 0.2s;
-    width: 150px;
+    padding: spacing(3);
+    transition: 0.3s;
+    width: 200px;
+
+    @include small-viewports {
+      font-size: pixels-to-rem(22);
+      width: 250px;
+    }
 
     &:hover {
       background-color: $clr-black;
@@ -48,13 +54,23 @@
       color: $clr-white;
     }
 
-    @include small-viewports {
-      font-size: pixels-to-rem(22);
-      width: 200px;
+    &--disabled {
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      color: $clr-gold;
+      pointer-events: none;
+      font-size: pixels-to-rem(32);
+      width: fit-content;
+
+      @include small-viewports {
+        font-size: pixels-to-rem(40);
+        width: fit-content;
+      }
     }
   }
 
-  &__devfox {
+  &__fox-image {
     bottom: spacing(2);
     position: fixed;
     right: spacing(2);
@@ -67,12 +83,22 @@
     }
   }
 
-  &__turns {
-    color: $clr-white;
-    font-size: pixels-to-rem(26);
+  &__info {
+    @include flex-row-center;
+    gap: spacing(5);
 
     @include small-viewports {
-      font-size: pixels-to-rem(30);
+      gap: spacing(8);
+    }
+
+    &--item {
+      color: $clr-white;
+      font-size: pixels-to-rem(24);
+      line-height: 1.3;
+  
+      @include small-viewports {
+        font-size: pixels-to-rem(30);
+      }
     }
   }
 }

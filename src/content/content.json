@@ -1,0 +1,18 @@
+{
+  "imageNames": [
+    "abe", "aryll", "beedle", "carlov", "dekutree", "docbandam",
+    "fado", "fishman", "ganondorf", "gonzo", "granny", "greatfairy",
+    "jabun", "joel", "killerbees", "king", "komali", "laruto",
+    "lenzo", "link", "maggie", "maggiesdad", "manny", "mako", "medli",
+    "merchant", "mesa", "mila", "milasdad", "mrsmarie", "niko", "nudge",
+    "orca", "rose", "salvatore", "senza", "sturgeon", "suebelle", "tetra",
+    "tingle", "tott", "valoo", "zelda", "zephos", "zill", "zuko", "zunari"
+  ],
+  "text": {
+    "title": "Zelda WW Memory",
+    "time": "Time:",
+    "turns": "Turns:",
+    "buttonInitialText": "Start The Game",
+    "buttonActiveText": "Match all cards!"
+  }
+}
